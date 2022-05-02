@@ -16,20 +16,20 @@
         <div class="secao modelos">
             <div class="titulo">Escolha o modelo</div>
             <div class="opcoes">
-                <div class="opcao tshirt">
-                    <div class="circulo">
+                <div class="opcao t-shirt">
+                    <div class="circulo" onclick="selecionarModelo(this)">
                         <img src="/imagens/tshirt.png" />
                     </div>
                     T-shirt
                 </div>
-                <div class="opcao camiseta">
-                    <div class="circulo">
+                <div class="opcao long">
+                    <div class="circulo" onclick="selecionarModelo(this)">
                         <img src="/imagens/Camiseta.png" />
                     </div>
                     Camiseta
                 </div>
-                <div class="opcao mangalonga">
-                    <div class="circulo">
+                <div class="opcao top-tank">
+                    <div class="circulo" onclick="selecionarModelo(this)">
                         <img src="/imagens/Mangalonga.png" />
                     </div>
                     Manga longa
@@ -39,43 +39,43 @@
         <div class="secao golas">
             <div class="titulo">Escolha a gola</div>
             <div class="opcoes">
-                <div class="opcao golav">
-                    <div class="circulo">
+                <div class="opcao v-neck">
+                    <div class="circulo" onclick="selecionarGola(this)">
                         <img src="/imagens/GolaV.png" />
                     </div>
-                    T-shirt
+                    Gola V
                 </div>
-                <div class="opcao golaredonda">
-                    <div class="circulo">
+                <div class="opcao round">
+                    <div class="circulo" onclick="selecionarGola(this)">
                         <img src="/imagens/GolaRedonda.png" />
                     </div>
-                    Camiseta
+                    Gola Redonda
                 </div>
-                <div class="opcao golapolo">
-                    <div class="circulo">
+                <div class="opcao polo">
+                    <div class="circulo" onclick="selecionarGola(this)">
                         <img src="/imagens/GolaPolo.png" />
                     </div>
-                    Manga longa
+                    Gola polo
                 </div>
             </div>
         </div>
         <div class="secao tecidos">
             <div class="titulo">Escolha o tecido</div>
             <div class="opcoes">
-                <div class="opcao seda">
-                    <div class="circulo">
+                <div class="opcao silk">
+                    <div class="circulo" onclick="selecionarTecido(this)">
                         <img src="/imagens/Seda.png" />
                     </div>
                     Seda
                 </div>
-                <div class="opcao algodao">
-                    <div class="circulo">
+                <div class="opcao cotton">
+                    <div class="circulo" onclick="selecionarTecido(this)">
                         <img src="/imagens/Algodão.png" />
                     </div>
                     Algodão
                 </div>
-                <div class="opcao poliester">
-                    <div class="circulo">
+                <div class="opcao polyester">
+                    <div class="circulo" onclick="selecionarTecido(this)">
                         <img src="/imagens/Poliester.png" />
                     </div>
                     Poliéster
@@ -84,10 +84,10 @@
         </div>
         <div class="secao imagem">
             <div class="titulo">Imagem de referência</div>
-            <input type="text" placeholder="Insira o link">
+            <input type="text" placeholder="Insira o link" onchange="ativarBotao()">
         </div>
         <div class="secao botao">
-            <div class="titulo">Confirmar o pedido</div>
+            <div class="titulo" onclick="confirmarPedido()">Confirmar o pedido</div>
         </div>
     </div>
     <div class="centro-direita">

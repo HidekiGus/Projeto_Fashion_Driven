@@ -191,3 +191,17 @@ body {
 .barra-bottom span{
     font-weight: 400;
 }
+
+.centro-esquerda .secao .selecionado {
+    border: 3px solid #404eed;
+    box-sizing: border-box;
+}
+
+.centro-esquerda .secao.imagem .selecionado input{
+    border: 3px solid #404eed;
+    box-sizing: border-box;
+}
+
+.centro-esquerda .botao.selecionado {
+    background-color: #404eed;
+}
