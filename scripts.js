@@ -151,14 +151,12 @@ function salvarDados(dados) {
 }
 
 function mostrarRecentes() {
-    console.log(dadosGet);
     let opcoes = document.querySelector(".barra-bottom .opcoes");
     opcoes.innerHTML = "";
     let tamanho = Number(dadosGet.length);
 
     for (let i = 0; i<tamanho; i++) {
         let nome = dadosGet[i].owner;
-        console.log(nome);
         let imagem = dadosGet[i].image;
         opcoes.innerHTML += `
         <div class="opcao ${i}" onclick="confirmarPedidoUltimosPedidos(this)">
