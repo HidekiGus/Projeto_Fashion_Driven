@@ -5,7 +5,6 @@ let nome = "";
 let modeloEscolhido;
 let golaEscolhida;
 let tecidoEscolhido;
-let promessaRequisitaRecentes;
 let dadosGet;
 
 
@@ -123,13 +122,6 @@ function confirmarPedidoUltimosPedidos(elemento) {
     }
 }
 
-function loopTeste(valor) {
-    for (i=0; i<dadosGet.length; i++) {
-        if (dadosGet[i].id === valor) {
-            return valor;
-        }
-    }
-}
 
 function alertaConfirmacao() {
     extraiAPI();
@@ -141,8 +133,8 @@ function alertaErro() {
 }
 
 function extraiAPI() {
-    promessaRequisitaRecentes = axios.get(API);
-    promessaRequisitaRecentes.then(salvarDados);
+    let promessa = axios.get(API);
+    promessa.then(salvarDados);
 }
 
 function salvarDados(dados) {
